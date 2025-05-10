@@ -1,6 +1,6 @@
 name: "[User Story] template"
 description: "This template aims to create user stories."
-title: "Write a short and clear title. Ex. Automate installation of software 'X'"
+title: "[User Story] Write a short and clear title. Ex. Automate installation of software 'X'"
 labels: story
 
 assignees:
