@@ -1,0 +1,68 @@
+name: "Pull Request Template"
+description: "This template is used to create Pull Requests for code changes."
+title: "PR: [Feature] Add feature X; [Bugfix] Fix issue Y"
+labels: pr
+
+assignees:
+  - leafarRafael-Dev
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 Pull Request Template
+
+  - type: markdown
+    attributes:
+      value: |
+        --- 
+        ### 🛠️ Description of the Change
+        Provide a detailed description of what changes are being introduced in this pull request.
+        - What functionality is being added?
+        - What bug(s) are being fixed?
+        - Are there any refactors or optimizations?
+
+  - type: textarea
+    attributes:
+      label: "Related Issue(s)"
+      description: "List the related issue(s) this PR addresses."
+      placeholder: |
+        - Closes #1: Add Dockerfile
+        - Fixes #2: Issue with SSL configuration
+
+  - type: dropdown
+    attributes:
+      label: "Priority"
+      options:
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Test Coverage"
+      description: "Describe the tests that were added or modified for this PR."
+      placeholder: |
+        - Added unit tests for the new API endpoints
+        - Manual tests for SSL certificate generation
+
+  - type: textarea
+    attributes:
+      label: "Checklist"
+      description: "Confirm that the following are completed before merging."
+      placeholder: |
+        - [ ] Code is reviewed and approved
+        - [ ] All tests pass (unit/integration)
+        - [ ] Documentation updated (README or internal docs)
+        - [ ] Changes have been tested in staging environment
+
+  - type: markdown
+    attributes:
+      value: |
+        ### ✅ Definition of Done
+        - [ ] Code is ready to be merged after review
+        - [ ] All feedback addressed
+        - [ ] Final approval received
+        - [ ] PR is squashed and rebased if needed
