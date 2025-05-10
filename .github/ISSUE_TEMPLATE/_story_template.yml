@@ -1,0 +1,50 @@
+name: "[User Story] template"
+description: "This template aims to create user stories."
+title: "Write a short and clear title. Ex. Automate installation of software 'X'"
+labels: story
+
+assignees:
+  - leafarRafael-Dev
+
+body:
+  - type: input
+    attributes:
+      label: "Objectively, what should be done?"
+      description: "Ex: Automate software installation flow; Create ssl for https connection;"
+
+  - type: textarea
+    attributes:
+      label: "Give a brief description of the problem."
+      placeholder: |
+        "Ex: As a developer, I would like automation X"
+
+  - type: textarea
+    attributes:
+      label: "Objectively, how would this solve the problem?"
+      placeholder: |
+        Ex: Ensures that the environment is configured with the correct dependencies;
+        Increases security between the client and the service.
+
+  - type: dropdown
+    attributes:
+      label: "Priority"
+      options:
+      - high
+      - medium
+      - low
+
+  - type: textarea
+    attributes:
+      label: "Related Task/Issues"
+      description: "List all task/issues related to this story"
+      placeholder: |
+        - [ ] #1 Create command 'build'
+        - [ ] #2 Configure ssl
+
+  - type: textarea
+    attributes:
+      label: "Acceptance criteria"
+      placeholder: |
+        - [ ] Item 1
+        - [ ] Item 2
+        - [ ] Item 3

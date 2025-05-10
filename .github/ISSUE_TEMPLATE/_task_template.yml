@@ -1,0 +1,74 @@
+name: "Task: Implementation or Feature Request"
+description: "This template is intended for creating tasks."
+
+title: |
+  Exemple 00:
+    [Task] Creating a Dockerfile with nginx software;
+  
+  Exemple 01:
+    Configuring ssl for https connections;
+
+labels: task
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 📌 Task Template
+
+  - type: markdown
+    attributes:
+      value: |
+        --- 
+        ### 🛠️ Task Description
+
+  - type: input
+    attributes:
+      label: "Task to be performed"
+      description: |
+        Briefly describe what must be done.
+        Exemple: Create install command in Makefile
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Describe the details of this task."
+      placeholder: |
+        Example:
+         - Automate the installation of Docker
+         - Expected version: 1.2.3
+         - Ensure idempotency: check if Docker is already installed
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: "Priority"
+      options:
+      - high
+      - medium
+      - low
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Acceptance criteria"
+      placeholder: |
+        ### Acceptance Criteria Example:
+        - [ ] Feature works in Chrome, Firefox and Safari
+        - [ ] Load time under 2s for 95% of requests
+        - [ ] Mobile responsive design
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### ✅ Definition of Done
+        - [ ] Code reviewed and approved
+        - [ ] Tests passing (unit/integration if applicable)
+        - [ ] Documentation updated (README or internal docs)
+        - [ ] Merged into the appropriate branch

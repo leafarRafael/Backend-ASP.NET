@@ -1,0 +1,40 @@
+name: "EPIC template"
+description: "This template is intended for creating project epics"
+title: "Ex: [EPIC] Infrastructure; [EPIC] Backend; [EPIC] Frontend"
+labels: epic
+
+assignees:
+  - leafarRafael-Dev
+
+body:
+  - type: input
+    id: short-description
+    attributes:
+      label: "Short description"
+      description: "Describe the objectives of this EPIC"
+      placeholder: "Describe the objectives of this epic here"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Detailed description"
+      description: "Describe the elements that are part of this epic."
+      placeholder: "Describe in detail the scope, context and components of this epic"
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: "Related Stories / Issues"
+      description: "List all stories or tasks related to this epic"
+      placeholder: | 
+        - [ ] #1 Create VPC
+        - [ ] #2 Configure CI/CD"
+
+  - type: textarea
+    attributes:
+      label: "Acceptance criteria"
+      description: "Type as per the example to create checkboxes"
+      placeholder: |
+        - [ ] Item 1
+        - [ ] Item 2
+        - [ ] Item 3
