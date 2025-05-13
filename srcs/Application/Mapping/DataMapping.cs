@@ -36,6 +36,3 @@ namespace ApiCRUD.srcs.Application.Mapping
 		}
 	}
 }
-
-
-
